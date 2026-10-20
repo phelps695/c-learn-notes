@@ -1,0 +1,17 @@
+/*一年有3，156E7秒。此程序正是为了，让用户得知，自己年龄所对应的秒数*/
+/*C primer plus 第三章练习5*/
+#include<stdio.h>
+#define SEC_PER_YEAR 3.156E7
+/*通过预编译指令定义每年的秒数*/
+ int main(void){
+  float second,year;
+  /*由于数值需要年龄也使用浮点型数据*/
+   printf("Enter how many old you are:");
+   scanf("%f",&year);
+   /*读取用户年龄*/
+  second = year*SEC_PER_YEAR;
+  /*计算年龄对应的秒数*/
+  printf("You are: %.1f years old .\n",year);
+  printf("And you are %e seconds old, too.\n",second);
+  return 0;
+ }
